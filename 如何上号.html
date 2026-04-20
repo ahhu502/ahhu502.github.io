@@ -58,55 +58,22 @@
             font-size: 16px;
             color: #444;
         }
-        /* 技术支持模块样式 */
-        .contact-section {
-            margin-top: 40px;
-            padding: 20px;
-            background: linear-gradient(135deg, #6366f1, #8b5cf6);
-            border-radius: 12px;
-            color: #fff;
-        }
-        .contact-title {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .contact-title::before {
-            content: "📞";
-            font-size: 28px;
-        }
-        .contact-telegram {
-            font-size: 22px;
-            font-weight: 500;
-        }
-        .contact-telegram a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+        .contact-card{background:linear-gradient(90deg, #667eea 0%, #764ba2 100%);color:white;padding:20px;border-radius:16px;text-align:center;margin-top:30px;cursor:pointer;}
+        .contact-title{font-size:24px;font-weight:500;margin-bottom:15px;}
+        .contact-info{font-size:18px;font-weight:400;}
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 顶部阿虎集团标题 -->
         <div class="top-title">阿虎集团</div>
-
-        <!-- 卡密格式 -->
         <div class="section-title">卡密格式</div>
         <p class="content-text">国别号 + 号码 + 验证码获取链接</p>
-
-        <!-- 登录步骤 -->
         <div class="section-title">登录步骤</div>
         <ol>
             <li>复制手机号码，并发送验证码请求。</li>
             <li>打开接码网址查看收到的验证码+二级密码。</li>
             <li>输入验证码+二级密码，完成登录。</li>
         </ol>
-
-        <!-- 注意事项 -->
         <div class="section-title">注意事项</div>
         <ul>
             <li>质保首登，首登秒封支持退换货，有异常情况请<span class="highlight">1小时内</span>联系客服；</li>
@@ -120,12 +87,9 @@
             登录使用后因日常使用中导致限制/封禁，不予售后，使用问题非账号质量问题，购买即默认同意相关规则。
         </p>
 
-        <!-- 底部技术支持与合作联系 -->
-        <div class="contact-section">
-            <div class="contact-title">技术支持与合作联系</div>
-            <div class="contact-telegram">
-                Telegram：<a href="https://t.me/AAA_502" target="_blank">@AAA_502</a>
-            </div>
+        <div class="contact-card" onclick="window.open('https://t.me/AAA_502','_blank')">
+            <div class="contact-title">👉 联系客服</div>
+            <div class="contact-info">点击即可打开TG客服</div>
         </div>
     </div>
 </body>
