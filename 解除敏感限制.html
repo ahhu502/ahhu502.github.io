@@ -14,22 +14,19 @@
     .content-list li{background-color:#f8f9fa;margin-bottom:12px;padding:15px 20px;border-radius:10px;border-left:4px solid #007bff;transition:transform 0.2s ease-in-out;}
     .content-list li:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.05);}
     .tip-box{background:#fff9c4;padding:12px 15px;border-radius:10px;margin:15px 0;border-left:4px solid #ffc107;}
-    .contact-card{background:linear-gradient(90deg, #667eea 0%, #764ba2 100%);color:white;padding:20px;border-radius:16px;text-align:center;margin-top:30px;}
+    .contact-card{background:linear-gradient(90deg, #667eea 0%, #764ba2 100%);color:white;padding:20px;border-radius:16px;text-align:center;margin-top:30px;cursor:pointer;}
     .contact-title{font-size:24px;font-weight:500;margin-bottom:15px;display:flex;align-items:center;justify-content:center;gap:8px;}
-    .contact-title::before{content:"📞";font-size:24px;}
-    .contact-info{font-size:24px;font-weight:400;}
+    .contact-info{font-size:18px;font-weight:400;}
 </style>
 </head>
 <body>
 <div class="container">
     <h1>🔓 Telegram解除敏感限制教程</h1>
     <div class="ahu-badge">—— 阿虎专属整理 ——</div>
-
     <div class="tip-box">
         <strong>出现限制的原因：</strong><br>
         部分群组无法加入、提示被屏蔽，是官方开启了敏感内容过滤，手机端无法设置，必须用网页端解除。
     </div>
-
     <ul class="content-list">
         <li><strong>1、登录网页端</strong><br>浏览器打开：<strong>https://web.telegram.org/</strong>，登录你的TG账号。</li>
         <li><strong>2、进入隐私设置</strong><br>点击左上角三条横杠 → <strong>Setting</strong> → <strong>Privacy and Security</strong>。</li>
@@ -37,9 +34,9 @@
         <li><strong>4、生效使用</strong><br>退出网页版，重新登录手机端，就能正常进被屏蔽的群组。</li>
     </ul>
 
-    <div class="contact-card">
-        <div class="contact-title">技术支持与合作联系</div>
-        <div class="contact-info">Telegram：@AAA_502</div>
+    <div class="contact-card" onclick="window.open('https://t.me/AAA_502','_blank')">
+        <div class="contact-title">👉 联系客服</div>
+        <div class="contact-info">点击即可打开TG客服</div>
     </div>
 </div>
 </body>
